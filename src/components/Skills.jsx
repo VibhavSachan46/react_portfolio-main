@@ -6,7 +6,7 @@ import javascript from "../assets/image/javascript.png"
 import react from "../assets/image/react.png"
 import nextjs from "../assets/image/nextjs.png"
 import tailwind from "../assets/image/tailwind.png"
-import Mongodb from "../assets/image/Mongodb.jpg"
+import mongodb from "../assets/image/mongodb.jpg"
 import prisma from "../assets/image/prisma.jpeg"
 import ts from "../assets/image/ts.png"
 import docker from "../assets/image/docker.png"
@@ -33,7 +33,7 @@ const Skills = () => {
       name: "Docker",
     },
     {
-      logo: Mongodb,
+      logo: mongodb,
       name: "MongoDB",
     },
     {
