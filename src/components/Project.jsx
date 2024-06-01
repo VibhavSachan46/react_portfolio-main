@@ -41,8 +41,8 @@ const Project = () => {
     {
       img: todo,
       name: "todo",
-      github_link: "https://github.com/VibhavSachan46/To-Do",
-      live_link: "https://github.com/VibhavSachan46/Todo-JS",
+      github_link: "https://github.com/VibhavSachan46/Todo-JS",
+      live_link: "https://vibhavsachan46.github.io/Todo-JS/",
       tech: "HTML, CSS, JavaScript",
     },
     {
