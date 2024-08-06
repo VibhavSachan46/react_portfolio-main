@@ -5,6 +5,7 @@ import weather from "../assets/image/weather.png";
 import todo from "../assets/image/todo.png";
 import google from "../assets/image/google.png";
 import rock from "../assets/image/rock.png";
+import FileSharing from "../assets/image/FileSharing.png"
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -17,7 +18,15 @@ const Project = () => {
       github_link: "https://github.com/VibhavSachan46/Blog-Completed",
       live_link: "https://story-scape.vercel.app/",
       tech: "JavaScript, ReactJS, NodeJS, ExpressJS, MongoDB, Tailwind CSS, Cloudinary, Redux Toolkit",
-    },{
+    },
+    {
+      img: FileSharing,
+      name: "Flick Files",
+      github_link: "https://github.com/VibhavSachan46/filesharing",
+      live_link: "https://flick-files.vercel.app/",
+      tech: "JavaScript, ReactJS, NodeJS, ExpressJS, MongoDB, Tailwind CSS, Cloudinary",
+    },
+    {
       img: paytm,
       name: "Paytm Wallet",
       github_link: "https://github.com/VibhavSachan46/Paytm",
