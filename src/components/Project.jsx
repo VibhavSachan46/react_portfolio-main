@@ -21,7 +21,7 @@ const Project = () => {
     },
     {
       img: FileSharing,
-      name: "Flick Files",
+      name: "Flick-Files",
       github_link: "https://github.com/VibhavSachan46/filesharing",
       live_link: "https://flick-files.vercel.app/",
       tech: "JavaScript, ReactJS, NodeJS, ExpressJS, MongoDB, Tailwind CSS, Cloudinary",
@@ -61,8 +61,7 @@ const Project = () => {
       live_link: "https://vibhavsachan46.github.io/rock-paper-scissor/",
       tech: "HTML, CSS, JavaScript",
     },
-
-    //Testing
+    
   ];
   return (
     <section id="projects" className="py-10 text-white">
