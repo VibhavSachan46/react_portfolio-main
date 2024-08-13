@@ -28,7 +28,7 @@ const Project = () => {
     },
     {
       img: paytm,
-      name: "Paytm Wallet",
+      name: "Digital Wallet App",
       github_link: "https://github.com/VibhavSachan46/Paytm",
       live_link: "https://paytm-frontend-two.vercel.app/signin",
       tech: "JavaScript, ReactJS, NodeJS, ExpressJs, MongoDB, Tailwind CSS, JWT",
