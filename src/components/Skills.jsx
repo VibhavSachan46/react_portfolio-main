@@ -27,18 +27,18 @@ const Skills = () => {
       logo: github,
       name: "GitHub",
     },
-    {
-      logo: docker,
-      name: "Docker",
-    },
+    // {
+    //   logo: docker,
+    //   name: "Docker",
+    // },
     {
       logo: mongodb,
       name: "MongoDB",
     },
-    {
-      logo: pgs,
-      name: "Postgres",
-    },
+    // {
+    //   logo: pgs,
+    //   name: "Postgres",
+    // },
     {
       logo: react,
       name: "React-Js",
@@ -51,10 +51,10 @@ const Skills = () => {
       logo: tailwind,
       name: "Tailwind CSS",
     },
-    {
-      logo: prisma,
-      name: "Prisma",
-    },
+    // {
+    //   logo: prisma,
+    //   name: "Prisma",
+    // },
     {
       logo: redux,
       name: "Redux",
