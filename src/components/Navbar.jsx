@@ -24,7 +24,7 @@ const Navbar = () => {
       <div className="flex items-center justify-between">
         <div className="mx-7">
           <a href="/">
-            <h4 className="text-4xl uppercase font-bold tracking-widest">
+            <h4 className="text-4xl uppercase font-bold lg:font-Heading tracking-widest">
               Vi<span className="text-cyan-600">bh</span>av
             </h4>
           </a>

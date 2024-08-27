@@ -77,7 +77,7 @@ const Project = () => {
             <div key={i} className="flex flex-col bg-slate-700 p-4 rounded-xl justify-center items-center">
               <h3 className="text-3xl font-Heading my-4 ">{project_info.name}</h3>
               <img src={project_info.img} alt="" className="rounded-lg w-full" />
-              <p className="p-2 font-Heading">{project_info.tech}</p>
+              <p className="p-2 lg:font-Heading">{project_info.tech}</p>
 
               <div className="flex gap-3 mt-4">
                 <a

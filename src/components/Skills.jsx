@@ -88,7 +88,7 @@ const Skills = () => {
 
 
               </div>
-              <p className="text-xl mt-3 font-Madimi">{skill.name}</p>
+              <p className="text-xl mt-3 lg:font-Madimi">{skill.name}</p>
             </div>
           ))}
         </div>
