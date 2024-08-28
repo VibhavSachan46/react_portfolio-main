@@ -27,10 +27,10 @@ const Skills = () => {
       logo: github,
       name: "GitHub",
     },
-    // {
-    //   logo: docker,
-    //   name: "Docker",
-    // },
+    {
+      logo: docker,
+      name: "Docker",
+    },
     {
       logo: mongodb,
       name: "MongoDB",
