@@ -27,7 +27,7 @@ const Project = () => {
       name: "Link Nest",
       github_link: "https://github.com/VibhavSachan46/Blog-Completed",
       live_link: "",
-      tech: "Type Script, NextJS, NodeJS, MongoDB, Tailwind CSS, Cloudinary, JWT",
+      tech: "Type Script, NextJS, NodeJS, MongoDB, Tailwind CSS, Cloudinary, JWT, Shadcn",
       videoURL: "https://res.cloudinary.com/ddnpto5af/video/upload/v1724915604/Project%20Videos/linbknest_demo_1_yb4fyx.mp4",
       status: "In Progress"
     },
