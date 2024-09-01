@@ -89,8 +89,8 @@ const Project = () => {
         </h3>
       </div>
       <br />
-      <div className="px-32">
-        <div className="grid gap-10 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 lg:px-5">
+      <div className="px-16">
+        <div className="grid gap-10 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-3 lg:px-5 sm:px-5">
           {projects.map((project_info, i) => (
             <div
               key={i}
@@ -113,7 +113,7 @@ const Project = () => {
                     rel="noopener noreferrer"
                     className="text-white bg-gray-800 px-2 py-2 inline-block rounded-2xl  hover:bg-gray-900 hover:text-cyan-600 justify-center items-center"
                   >
-                    Github
+                    Git hub
                   </a>
                 )}
 
