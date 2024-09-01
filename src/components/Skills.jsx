@@ -70,11 +70,11 @@ const Skills = () => {
         <h3 className="text-4xl font-semibold">
           My <span className="text-cyan-600">Skills</span>
         </h3>
-        <div className="flex items-center justify-center mt-12 gap-10 flex-wrap">
+        <div className="flex items-center justify-center mt-12 gap-10 flex-wrap ">
           {skills?.map((skill, i) => (
             <div
               key={i}
-              className="border-2 group border-cyan-600 relative min-w-[10rem] max-w-[16rem] bg-gray-900 p-10 rounded-xl p-8"
+              className="border-2 group border-cyan-600 relative min-w-[10rem] max-w-[16rem] bg-gray-900 p-10 rounded-xl p-8 bg-transparent transition-transform duration-300 ease-in-out hover:scale-105 hover:brightness-110"
             >
               <div
                 style={{

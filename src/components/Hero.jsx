@@ -1,6 +1,7 @@
 import React from "react";
 import profile from "../assets/image/profile.jpg"
-import photo from "../assets/images/photo.png"
+import Type from "./Type";
+
 const Hero = () => {
   const social_media = [
     {
@@ -26,7 +27,11 @@ const Hero = () => {
       className="min-h-screen flex py-10 md:flex-row flex-col items-center"
     >
       <div className="w-[40%] flex justify-center h-full mt-8 ">
-        <img src={profile} alt="" className="md:w-9/12 object-cover rounded-full bg-transparent" />
+        <img
+          src={profile}
+          alt=""
+          className="md:w-9/12 object-cover rounded-full bg-transparent transition-transform duration-300 ease-in-out hover:scale-105 hover:brightness-110 lg:mt-0 sm:mt-32"
+        />
       </div>
       <div className="w-[60%] mt-8">
         <div className="md:text-left text-center">
@@ -38,10 +43,10 @@ const Hero = () => {
             I'am <span className="text-cyan-600 md:text-6xl">Vibhav Sachan</span>
           </h1>
           <h4 className="md:text-2xl text-lg md:leading-normal leading-5 mt-4 font-bold text-gray-600">
-            Fullstack Developer
+            {<Type/>}
           </h4>
           <a href="#contact">
-            <button className="btn-primary mt-8">
+            <button className="btn-primary mt-8 bg-transparent transition-transform duration-300 ease-in-out hover:scale-105 hover:brightness-110">
               Contact Me
             </button>
           </a>
@@ -50,7 +55,7 @@ const Hero = () => {
             {social_media?.map((social) => (
               <a
                 key={social}
-                className="text-gray-600 hover:text-white cursor-pointer "
+                className="text-gray-600 hover:text-white cursor-pointer hover:text-cyan-600 transition-transform duration-300 ease-in-out hover:scale-110 hover:brightness-110"
                 href={social.link}
                 target="_blank"
               >
