@@ -14,7 +14,7 @@ const About = () => {
             <div className="text-gray-300 my-3">
 
               <p className="text-justify leading-7 w-11/12 mx-auto text-cyan-600 bg-transparent transition-transform duration-300 ease-in-out hover:scale-105 hover:brightness-110 ">
-                Hello! 👋 I'm Vibhav Sachan, a final year student deeply passionate about web development. My journey is about merging the dynamic MERN stack with a solid foundation in data structures and algorithms.
+                Hello! 👋 I'm Vibhav Sachan, a 2024 CSE graduate deeply passionate about web development. My journey is about merging the dynamic MERN stack with a solid foundation in data structures and algorithms.
               </p>
               <br />
 
