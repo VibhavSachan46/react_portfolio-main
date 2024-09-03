@@ -37,6 +37,7 @@ const Project = () => {
       github_link: "https://github.com/VibhavSachan46/filesharing",
       live_link: "https://flick-files.vercel.app/",
       tech: "JavaScript, ReactJS, NodeJS, ExpressJS, MongoDB, Tailwind CSS, Cloudinary",
+      videoURL:"https://res.cloudinary.com/ddnpto5af/video/upload/v1725348805/Project%20Videos/flick_files_flyjgc.mp4",
       status: "In Progress"
     },
     {
