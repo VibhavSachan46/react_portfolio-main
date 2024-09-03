@@ -18,7 +18,7 @@ const Project = () => {
       name: "Story Scape",
       github_link: "https://github.com/VibhavSachan46/Blog-Completed",
       live_link: "https://story-scape.vercel.app/",
-      tech: "JS, ReactJS, NodeJS, ExpressJS, MongoDB, Tailwind CSS, Cloudinary, Redux Toolkit",
+      tech: "JS, ReactJS, NodeJS, ExpressJS, MongoDB, JWT, Tailwind CSS, Cloudinary, Redux Toolkit",
       videoURL: "https://res.cloudinary.com/ddnpto5af/video/upload/v1724913613/Project%20Videos/StoryScape_s9f6js.mp4",
       status: "Completed"
     },
@@ -27,7 +27,7 @@ const Project = () => {
       name: "Link Nest",
       github_link: "https://github.com/VibhavSachan46/Link-Nest",
       live_link: "",
-      tech: "Type Script, NextJS, NodeJS, MongoDB, Tailwind CSS, Cloudinary, JWT, Shadcn",
+      tech: "Type Script, NextJS, NodeJS, MongoDB, JWT, Tailwind CSS, Cloudinary, JWT, Shadcn",
       videoURL: "https://res.cloudinary.com/ddnpto5af/video/upload/v1724915604/Project%20Videos/linbknest_demo_1_yb4fyx.mp4",
       status: "In Progress"
     },
@@ -36,7 +36,7 @@ const Project = () => {
       name: "Flick-Files",
       github_link: "https://github.com/VibhavSachan46/filesharing",
       live_link: "https://flick-files.vercel.app/",
-      tech: "JavaScript, ReactJS, NodeJS, ExpressJS, MongoDB, Tailwind CSS, Cloudinary",
+      tech: "JavaScript, ReactJS, NodeJS, ExpressJS, MongoDB, JWT, Tailwind CSS, Cloudinary",
       videoURL:"https://res.cloudinary.com/ddnpto5af/video/upload/v1725348805/Project%20Videos/flick_files_flyjgc.mp4",
       status: "In Progress"
     },
@@ -45,7 +45,7 @@ const Project = () => {
       name: "Digital Wallet App",
       github_link: "https://github.com/VibhavSachan46/Paytm",
       live_link: "https://paytm-frontend-two.vercel.app/signin",
-      tech: "JavaScript, ReactJS, NodeJS, ExpressJs, MongoDB, Tailwind CSS, JWT",
+      tech: "JavaScript, ReactJS, NodeJS, ExpressJs, MongoDB, JWT, Tailwind CSS, JWT",
       status: "Completed"
     },
     {
