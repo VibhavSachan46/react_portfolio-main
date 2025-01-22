@@ -1,18 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import storyscape from "../assets/images/storyscape.png";
 import paytm from "../assets/images/paytm.png";
 import weather from "../assets/image/weather.png";
 import todo from "../assets/image/todo.png";
 import google from "../assets/image/google.png";
 import rock from "../assets/image/rock.png";
-import FileSharing from "../assets/image/FileSharing.png"
-import LinkNest from "../assets/image/LinkNest.png"
+import FileSharing from "../assets/image/FileSharing.png";
+import LinkNest from "../assets/image/LinkNest.png";
+import digilocker from "../assets/image/digilocker.png";
 
 import "swiper/css";
 import "swiper/css/pagination";
 
 const Project = () => {
+  const [selectedCategory, setSelectedCategory] = useState("All Projects");
+
   const projects = [
+    {
+      img: digilocker,
+      name: "DigiLocker 3.0",
+      github_link: "https://github.com/VibhavSachan46/DigiLocker-3.0",
+      live_link: "https://digi-locker-3-0.vercel.app/",
+      tech: "Solidity, JS, ReactJS,  Ether.js, Pinata, Hardhat, MetaMask Tailwind CSS",
+      videoURL: "https://res.cloudinary.com/ddnpto5af/video/upload/v1737575394/Project%20Videos/digilocker_kwnnta.mp4",
+      status: "Completed",
+      category: "Web3 Projects",
+    },
     {
       img: storyscape,
       name: "Story Scape",
@@ -20,7 +33,8 @@ const Project = () => {
       live_link: "https://story-scape.vercel.app/",
       tech: "JS, ReactJS, NodeJS, ExpressJS, MongoDB, JWT, Tailwind CSS, Cloudinary, Redux Toolkit",
       videoURL: "https://res.cloudinary.com/ddnpto5af/video/upload/v1724913613/Project%20Videos/StoryScape_s9f6js.mp4",
-      status: "Completed"
+      status: "Completed",
+      category: "Full Stack Projects",
     },
     {
       img: LinkNest,
@@ -29,7 +43,8 @@ const Project = () => {
       live_link: "",
       tech: "Type Script, NextJS, NodeJS, MongoDB, JWT, Tailwind CSS, Cloudinary, JWT, Shadcn",
       videoURL: "https://res.cloudinary.com/ddnpto5af/video/upload/v1724915604/Project%20Videos/linbknest_demo_1_yb4fyx.mp4",
-      status: "In Progress"
+      status: "In Progress",
+      category: "Full Stack Projects",
     },
     {
       img: FileSharing,
@@ -37,8 +52,9 @@ const Project = () => {
       github_link: "https://github.com/VibhavSachan46/filesharing",
       live_link: "https://flick-files.vercel.app/",
       tech: "JavaScript, ReactJS, NodeJS, ExpressJS, MongoDB, JWT, Tailwind CSS, Cloudinary",
-      videoURL:"https://res.cloudinary.com/ddnpto5af/video/upload/v1725348805/Project%20Videos/flick_files_flyjgc.mp4",
-      status: "In Progress"
+      videoURL: "https://res.cloudinary.com/ddnpto5af/video/upload/v1725348805/Project%20Videos/flick_files_flyjgc.mp4",
+      status: "In Progress",
+      category: "Full Stack Projects",
     },
     {
       img: paytm,
@@ -46,7 +62,8 @@ const Project = () => {
       github_link: "https://github.com/VibhavSachan46/Paytm",
       live_link: "https://paytm-frontend-two.vercel.app/signin",
       tech: "JavaScript, ReactJS, NodeJS, ExpressJs, MongoDB, JWT, Tailwind CSS, JWT",
-      status: "Completed"
+      status: "Completed",
+      category: "Full Stack Projects",
     },
     {
       img: weather,
@@ -54,34 +71,17 @@ const Project = () => {
       github_link: "https://github.com/VibhavSachan46/weather1",
       live_link: "https://weather-ten-drab.vercel.app/",
       tech: "JavaScript, ReactJS",
-      status: "Completed"
+      status: "Completed",
+      category: "Frontend Projects",
     },
-    {
-      img: google,
-      name: "Google Search",
-      github_link: "https://github.com/VibhavSachan46/google-search-app-clone",
-      live_link: "https://gooogle-search-app.netlify.app/",
-      tech: "JavaScript, ReactJs, Tailwind CSS",
-      status: "Completed"
-    },
-    {
-      img: todo,
-      name: "todo",
-      github_link: "https://github.com/VibhavSachan46/Todo-JS",
-      live_link: "https://vibhavsachan46.github.io/Todo-JS/",
-      tech: "HTML, CSS, JavaScript",
-      status: "Completed"
-    },
-    {
-      img: rock,
-      name: "Rock Paper Scissor",
-      github_link: "https://github.com/VibhavSachan46/rock-paper-scissor",
-      live_link: "https://vibhavsachan46.github.io/rock-paper-scissor/",
-      tech: "HTML, CSS, JavaScript",
-      status: "Completed"
-    },
-
   ];
+
+  // Filter projects based on selected category
+  const filteredProjects =
+    selectedCategory === "All Projects"
+      ? projects
+      : projects.filter((project) => project.category === selectedCategory);
+
   return (
     <section id="projects" className="py-10 text-white">
       <div className="text-center mt-16">
@@ -90,9 +90,25 @@ const Project = () => {
         </h3>
       </div>
       <br />
+
+      {/* Category Navigation */}
+      <div className="flex justify-center space-x-4 my-4">
+        {["All Projects", "Web3 Projects", "Full Stack Projects", "Frontend Projects"].map((category) => (
+          <button
+            key={category}
+            className={`px-4 py-2 rounded-lg text-white transition-all ${
+              selectedCategory === category ? "bg-cyan-600" : "bg-gray-800 hover:bg-gray-700"
+            }`}
+            onClick={() => setSelectedCategory(category)}
+          >
+            {category}
+          </button>
+        ))}
+      </div>
+
       <div className="px-16">
         <div className="grid gap-10 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-3 lg:px-5 sm:px-5">
-          {projects.map((project_info, i) => (
+          {filteredProjects.map((project_info, i) => (
             <div
               key={i}
               className="flex flex-col bg-slate-700 p-4 rounded-3xl justify-center items-center bg-transparent transition-transform duration-300 ease-in-out hover:scale-105 hover:brightness-110"
@@ -102,7 +118,13 @@ const Project = () => {
               <p className="p-2 lg:font-Heading">{project_info.tech}</p>
 
               {/* Status Indicator */}
-              <div className={`status-indicator ${project_info.status === 'In Progress' ? 'bg-yellow-500 hover:bg-yellow-700 hover:cursor-pointer' : 'bg-green-500 hover:bg-green-700 hover:cursor-pointer'} text-white rounded-full px-4 py-2 mt-4 mb-4`}>
+              <div
+                className={`status-indicator ${
+                  project_info.status === "In Progress"
+                    ? "bg-yellow-500 hover:bg-yellow-700 hover:cursor-pointer"
+                    : "bg-green-500 hover:bg-green-700 hover:cursor-pointer"
+                } text-white rounded-full px-4 py-2 mt-4 mb-4`}
+              >
                 {project_info.status}
               </div>
 
@@ -112,7 +134,7 @@ const Project = () => {
                     href={project_info.github_link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-white bg-gray-800 px-2 py-2 inline-block rounded-2xl  hover:bg-gray-900 hover:text-cyan-600 justify-center items-center"
+                    className="text-white bg-gray-800 px-2 py-2 inline-block rounded-2xl hover:bg-gray-900 hover:text-cyan-600 justify-center items-center"
                   >
                     Git hub
                   </a>
@@ -123,7 +145,7 @@ const Project = () => {
                     href={project_info.live_link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-white bg-gray-800 px-2 py-2 inline-block rounded-2xl  hover:bg-gray-900 hover:text-cyan-600 justify-center items-center"
+                    className="text-white bg-gray-800 px-2 py-2 inline-block rounded-2xl hover:bg-gray-900 hover:text-cyan-600 justify-center items-center"
                   >
                     Live Project
                   </a>
@@ -134,7 +156,7 @@ const Project = () => {
                     href={project_info.videoURL}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-white bg-gray-800 px-2 py-2 inline-block rounded-2xl  hover:bg-gray-900 hover:text-cyan-600 justify-center items-center"
+                    className="text-white bg-gray-800 px-2 py-2 inline-block rounded-2xl hover:bg-gray-900 hover:text-cyan-600 justify-center items-center"
                   >
                     Watch Video
                   </a>

@@ -11,10 +11,30 @@ import ts from "../assets/image/ts.png"
 import docker from "../assets/image/docker.png"
 import redux from "../assets/image/redux.png"
 import pgs from "../assets/image/postgres.png"
-
+import ether from "../assets/image/ether.png"
+import solidity from "../assets/image/solidity.png"
+import hardhat from "../assets/image/hardhat.png"
+import metamask from "../assets/image/metamask.png"
 const Skills = () => {
 
   const skills = [
+    
+    {
+      logo: solidity,
+      name: "Solidity",
+    },
+    {
+      logo: metamask,
+      name: "MetaMask",
+    },
+    {
+      logo: ether,
+      name: "Ether.js",
+    },
+    {
+      logo: hardhat,
+      name: "HardHat",
+    },
     {
       logo: javascript,
       name: "Java Script",
@@ -35,10 +55,6 @@ const Skills = () => {
       logo: mongodb,
       name: "MongoDB",
     },
-    // {
-    //   logo: pgs,
-    //   name: "Postgres",
-    // },
     {
       logo: react,
       name: "React-Js",
@@ -47,10 +63,10 @@ const Skills = () => {
       logo: nextjs,
       name: "Next-Js",
     },
-    {
-      logo: tailwind,
-      name: "Tailwind CSS",
-    },
+    // {
+    //   logo: tailwind,
+    //   name: "Tailwind CSS",
+    // },
     // {
     //   logo: prisma,
     //   name: "Prisma",
