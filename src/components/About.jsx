@@ -14,18 +14,18 @@ const About = () => {
             <div className="text-gray-300 my-3">
 
               <p className="text-justify leading-7 w-11/12 mx-auto text-cyan-600 bg-transparent transition-transform duration-300 ease-in-out hover:scale-105 hover:brightness-110 ">
-                Hello! 👋 I'm Vibhav Sachan, a 2024 CSE graduate deeply passionate about web development. My journey is about merging the dynamic MERN stack with a solid foundation in data structures and algorithms.
+                Hello! 👋 I'm Vibhav Sachan, a 2024 Computer Science graduate with a deep passion for Web3 and full-stack development. My journey revolves around blending the power of the MERN (MongoDB, Express.js, React, Node.js) stack with the decentralized potential of blockchain technology.
               </p>
               <br />
 
               <p className="text-justify leading-7 w-11/12 mx-auto text-cyan-600 bg-transparent transition-transform duration-300 ease-in-out hover:scale-105 hover:brightness-110 ">
-                Currently, I'm immersed in real-world projects using the MERN (MongoDB, Express.js, React, Node.js) stack. My focus is on crafting responsive, user-friendly web applications that transform ideas into impactful solutions.
+                I specialize in building scalable, secure, and user-friendly Web3 applications, leveraging smart contracts, decentralized storage, and blockchain integrations. My goal is to craft innovative solutions that enhance user experiences in the decentralized web.
               </p>
               <br />
 
-              <p className="text-justify leading-7 w-11/12 mx-auto text-cyan-600 bg-transparent transition-transform duration-300 ease-in-out hover:scale-105 hover:brightness-110 ">
+              {/* <p className="text-justify leading-7 w-11/12 mx-auto text-cyan-600 bg-transparent transition-transform duration-300 ease-in-out hover:scale-105 hover:brightness-110 ">
                 Alongside, I'm dedicated to honing my problem-solving skills through continuous learning and practice in data structures and algorithms. I strongly believe that mastering these fundamentals is key to building robust and efficient software.
-              </p>
+              </p> */}
 
               <br />
 

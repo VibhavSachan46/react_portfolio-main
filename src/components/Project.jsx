@@ -8,6 +8,7 @@ import rock from "../assets/image/rock.png";
 import FileSharing from "../assets/image/FileSharing.png";
 import LinkNest from "../assets/image/LinkNest.png";
 import digilocker from "../assets/image/digilocker.png";
+import metaTransfer from "../assets/image/metaTransfer.png";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -17,11 +18,21 @@ const Project = () => {
 
   const projects = [
     {
+      img: metaTransfer,
+      name: "Meta Transfer",
+      github_link: "https://github.com/VibhavSachan46/MetaTransfer",
+      live_link: "https://meta-transfer.vercel.app/",
+      tech: "Solidity, JS, ReactJS,  Ether.js, Hardhat, MetaMask, Tailwind CSS",
+      videoURL: "https://res.cloudinary.com/ddnpto5af/video/upload/v1738132689/Project%20Videos/metaTransfer_yrm3ug.mp4",
+      status: "Completed",
+      category: "Web3 Projects",
+    },
+    {
       img: digilocker,
       name: "DigiLocker 3.0",
       github_link: "https://github.com/VibhavSachan46/DigiLocker-3.0",
       live_link: "https://digi-locker-3-0.vercel.app/",
-      tech: "Solidity, JS, ReactJS,  Ether.js, Pinata, Hardhat, MetaMask Tailwind CSS",
+      tech: "Solidity, JS, ReactJS,  Ether.js, Pinata, Hardhat, MetaMask, Tailwind CSS",
       videoURL: "https://res.cloudinary.com/ddnpto5af/video/upload/v1737575394/Project%20Videos/digilocker_kwnnta.mp4",
       status: "Completed",
       category: "Web3 Projects",
@@ -106,7 +117,7 @@ const Project = () => {
         ))}
       </div>
 
-      <div className="px-16">
+      <div className="px-28 py-4">
         <div className="grid gap-10 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-3 lg:px-5 sm:px-5">
           {filteredProjects.map((project_info, i) => (
             <div
