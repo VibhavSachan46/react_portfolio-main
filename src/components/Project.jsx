@@ -8,7 +8,7 @@ import rock from "../assets/image/rock.png";
 import FileSharing from "../assets/image/FileSharing.png";
 import LinkNest from "../assets/image/LinkNest.png";
 import digilocker from "../assets/image/digilocker.png";
-import metaTransfer from "../assets/image/metaTransfer.png";
+import metaTransfer from "../assets/image/metatransfer.png";
 
 import "swiper/css";
 import "swiper/css/pagination";
